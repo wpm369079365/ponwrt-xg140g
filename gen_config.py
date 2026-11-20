@@ -35,13 +35,19 @@ WANTED_Y = [
     "CONFIG_PACKAGE_kmod-fuse",
     "CONFIG_PACKAGE_samba4-server",
     "CONFIG_PACKAGE_luci-app-samba4",
-    # 下载工具：aria2（HTTP/FTP/BT/磁力）
-    "CONFIG_PACKAGE_aria2",
-    "CONFIG_PACKAGE_luci-app-aria2",
+    # 下载工具：Transmission（BT/磁力；aria2 已移除）
+    "CONFIG_PACKAGE_luci-app-transmission",
+    "CONFIG_PACKAGE_transmission-cli",
+    "CONFIG_PACKAGE_transmission-daemon",
+    "CONFIG_PACKAGE_transmission-remote",
+    "CONFIG_PACKAGE_transmission-web-control",
 ]
 WANTED_N = [
     "CONFIG_SING_BOX_BUILD_NAIVE_OUTBOUND",
     "CONFIG_SING_BOX_TINY_BUILD_NAIVE_OUTBOUND",
+    "CONFIG_PACKAGE_aria2",
+    "CONFIG_PACKAGE_luci-app-aria2",
+    "CONFIG_PACKAGE_transmission-web",
 ]
 DEVICE_RE = re.compile(r"^CONFIG_TARGET_DEVICE_airoha_an7581_DEVICE_[A-Za-z0-9_.-]+$")
 

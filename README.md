@@ -20,6 +20,10 @@ ponwrt 官方设备表只有 `XG-040G-MD (UBI)`。XG-140G-MD 与它是同一块 
 | 网盘 | `luci-app-openlist` + `openlist` |
 | KMS | `vlmcsd` + `luci-app-vlmcsd` |
 | 拨号 | PPPoE / `luci-proto-ppp` / `luci-proto-ipv6` + ponwrt 原生 PON |
+| IPv6 | 内核 IPv6、`odhcp6c`、`odhcpd-ipv6only`、dnsmasq DHCPv6 均已开启 |
+| USB 存储 | `block-mount` + `automount` + `ntfs-3g`（自动挂载、NTFS 读写） |
+| 网络共享 | `samba4-server` + `luci-app-samba4` |
+| 下载工具 | `luci-app-transmission` + Transmission daemon/CLI/remote/Web Control；aria2 已移除 |
 | 主题 | argon，中文语言 |
 
 其它服务类插件沿用 ponwrt 官方精简配置，均为关闭状态。
