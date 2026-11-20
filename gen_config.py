@@ -28,6 +28,16 @@ WANTED_Y = [
     "CONFIG_PACKAGE_ddns-scripts-dnspod",
     "CONFIG_PACKAGE_ddns-scripts-noip",
     "CONFIG_PACKAGE_ddns-scripts-freedns",
+    # USB 存储：自动挂载 + NTFS 读写 + 网络共享
+    "CONFIG_PACKAGE_block-mount",
+    "CONFIG_PACKAGE_automount",
+    "CONFIG_PACKAGE_ntfs-3g",
+    "CONFIG_PACKAGE_kmod-fuse",
+    "CONFIG_PACKAGE_samba4-server",
+    "CONFIG_PACKAGE_luci-app-samba4",
+    # 下载工具：aria2（HTTP/FTP/BT/磁力）
+    "CONFIG_PACKAGE_aria2",
+    "CONFIG_PACKAGE_luci-app-aria2",
 ]
 WANTED_N = [
     "CONFIG_SING_BOX_BUILD_NAIVE_OUTBOUND",
